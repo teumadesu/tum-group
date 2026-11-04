@@ -1,1 +1,192 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TUM - リンク集</title>
+  <style>
+    /* 共通リセット＆ベースデザイン */
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
 
+    body {
+      background-color: #0b0f19;
+      color: #f8fafc;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    /* ヘッダー */
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 2rem 5%;
+    }
+
+    .logo {
+      font-weight: 800;
+      letter-spacing: 2px;
+      font-size: 1.2rem;
+      color: #38bdf8;
+      text-decoration: none;
+    }
+
+    .linknoyatu {
+      color: #94a3b8;
+      text-decoration: none;
+      font-size: 0.9rem;
+      transition: color 0.3s;
+    }
+
+    .nav-link:hover {
+      color: #ffffff;
+    }
+
+    /* メインコンテンツ */
+    main {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 2rem 1.5rem;
+      width: 100%;
+    }
+
+    .section-title {
+      text-align: center;
+      margin-bottom: 3rem;
+      animation: fadeInUp 0.8s ease-out;
+    }
+
+    .section-title h1 {
+      font-size: 2.5rem;
+      background: linear-gradient(135deg, #ffffff 30%, #94a3b8 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      margin-bottom: 0.5rem;
+    }
+
+    .section-title p {
+      color: #64748b;
+      font-size: 1rem;
+    }
+
+    /* グリッドレイアウト（カードの並び） */
+    .card-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1.5rem;
+      animation: fadeInUp 1s ease-out;
+    }
+
+    /* 活動カード */
+    .card {
+      background: #111827;
+      border: 1px solid #1e293b;
+      border-radius: 16px;
+      padding: 1.8rem;
+      transition: all 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+      border-color: #38bdf8;
+      box-shadow: 0 10px 30px rgba(56, 189, 248, 0.15);
+    }
+
+
+    .card h2 {
+      font-size: 1.3rem;
+      margin-bottom: 0.8rem;
+      color: #f1f5f9;
+    }
+
+    .card p {
+      color: #94a3b8;
+      font-size: 0.95rem;
+      line-height: 1.6;
+    }
+
+    /* 戻るボタン */
+    .back-btn-container {
+      text-align: center;
+      margin-top: 4rem;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 0.8rem 2rem;
+      background: #1e293b;
+      color: #f8fafc;
+      font-weight: 600;
+      text-decoration: none;
+      border-radius: 50px;
+      transition: all 0.3s ease;
+      border: 1px solid #334155;
+    }
+
+    .btn:hover {
+      background: #38bdf8;
+      color: #ffffff;
+      border-color: #38bdf8;
+    }
+
+    /* フッター */
+    footer {
+      text-align: center;
+      padding: 2rem;
+      color: #475569;
+      font-size: 0.9rem;
+    }
+
+    /* アニメーション */
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <a href="index.html" class="logo">TUM Group</a>
+    <a href="index.html" class="linknoyatu">← Home</a>
+  </header>
+
+  <main>
+    <div class="section-title">
+      <h1>リンク集/配布</h1>
+    </div>
+
+    <div class="card-grid">
+      
+      <div class="card">
+        <h2>便利時計</h2>
+        <p>2026年11月4日公開<br>機能豊富で様々な用途に使える時計。</p>
+    <h3>機能</h3>
+    <p>・日付(曜日)<br>・時間(xx:xx:xx)<br>・アラーム機能<br>・やることリスト<br>・メモ帳<br>・ストップウォッチ<br>・電卓<br>・PWAでインストール</p>
+    <a href="https://teumadesu.github.io/koukai/" class="linknoyatu">サイトはこちら</a>
+      </div>
+
+    <div class="back-btn-container">
+      <a href="index.html" class="btn">Back to Home</a>
+    </div>
+  </main>
+
+  <footer>
+    © TUM Group All Rights Reserved.
+  </footer>
+
+</body>
+</html>

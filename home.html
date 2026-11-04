@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TUM - Home</title>
+  <style>
+        .linknoyatu {
+      color: #94a3b8;
+      text-decoration: none;
+      font-size: 0.9rem;
+      transition: color 0.3s;
+    }
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background-color: #0b0f19;
+      color: #f8fafc;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      overflow-x: hidden;
+    }
+
+    /* ヘッダー */
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 2rem 5%;
+      animation: fadeInDown 1s ease-out;
+    }
+
+    .logo {
+      font-weight: 800;
+      letter-spacing: 2px;
+      font-size: 1.2rem;
+      color: #38bdf8;
+    }
+
+    main {
+      text-align: center;
+      padding: 0 1rem;
+      animation: fadeInUp 1.2s ease-out;
+    }
+
+    h1 {
+      font-size: 3rem;
+      font-weight: 700;
+      letter-spacing: -1px;
+      margin-bottom: 1rem;
+      background: linear-gradient(135deg, #ffffff 30%, #94a3b8 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    p {
+      color: #94a3b8;
+      font-size: 1.1rem;
+      max-width: 600px;
+      margin: 0 auto 2rem auto;
+      line-height: 1.6;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 0.8rem 2rem;
+      background: #f8fafc;
+      color: #0b0f19;
+      font-weight: 600;
+      text-decoration: none;
+      border-radius: 50px;
+      transition: all 0.3s ease;
+      box-shadow: 0 4px 20px rgba(255, 255, 255, 0.1);
+    }
+
+    .btn:hover {
+      background: #38bdf8;
+      color: #ffffff;
+      transform: translateY(-2px);
+      box-shadow: 0 6px 25px rgba(56, 189, 248, 0.4);
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem;
+      color: #475569;
+      font-size: 0.9rem;
+      animation: fadeIn 1.5s ease-out;
+    }
+
+    @keyframes fadeInDown {
+      from {
+        opacity: 0;
+        transform: translateY(-20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="logo">TUM Group</div>
+    <a href="katudounaiyo.html" class="linknoyatu">活動内容</a>
+    <a href="news.html" class="linknoyatu">ニュース</a>
+  </header>
+
+  <main>
+    <h1>Create, Code, Connect.</h1>
+    <p>プログラミング、メディア編集、そしてデジタル領域のあらゆる挑戦を。<br>次世代のアイデアをカタチにする場所。</p>
+  </main>
+
+  <main>
+    <h1>TUMとは</h1>
+    <p>私たちは、プログラミング、メディア編集、そしてデジタル領域のあらゆる挑戦をサポートします。<br>次世代のアイデアをカタチにするグループです。</p>
+  </main>
+
+  <main>
+    <h1>活動内容</h1>
+    <p>・サイト開発<br>・アプリ開発<br>・デザイン制作<br>・動画作成<br>・ITサポート<br>・サイト運営</p>
+    <a href="katudounaiyo.html" class="btn">詳細はこちら</a>
+  </main>
+  <main>
+    <h1>News-ニュース</h1>
+    <p>最新のニュースや情報をお届けします。</p>
+    <a href="news.html" class="btn">ニュースを見る</a>
+  </main>
+  <footer>
+    © TUM Group All Rights Reserved.
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TUM - 活動内容</title>
+  <style>
+    /* 共通リセット＆ベースデザイン */
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background-color: #0b0f19;
+      color: #f8fafc;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    /* ヘッダー */
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 2rem 5%;
+    }
+
+    .logo {
+      font-weight: 800;
+      letter-spacing: 2px;
+      font-size: 1.2rem;
+      color: #38bdf8;
+      text-decoration: none;
+    }
+
+    .linknoyatu {
+      color: #94a3b8;
+      text-decoration: none;
+      font-size: 0.9rem;
+      transition: color 0.3s;
+    }
+
+    .nav-link:hover {
+      color: #ffffff;
+    }
+
+    /* メインコンテンツ */
+    main {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 2rem 1.5rem;
+      width: 100%;
+    }
+
+    .section-title {
+      text-align: center;
+      margin-bottom: 3rem;
+      animation: fadeInUp 0.8s ease-out;
+    }
+
+    .section-title h1 {
+      font-size: 2.5rem;
+      background: linear-gradient(135deg, #ffffff 30%, #94a3b8 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      margin-bottom: 0.5rem;
+    }
+
+    .section-title p {
+      color: #64748b;
+      font-size: 1rem;
+    }
+
+    /* グリッドレイアウト（カードの並び） */
+    .card-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1.5rem;
+      animation: fadeInUp 1s ease-out;
+    }
+
+    /* 活動カード */
+    .card {
+      background: #111827;
+      border: 1px solid #1e293b;
+      border-radius: 16px;
+      padding: 1.8rem;
+      transition: all 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+      border-color: #38bdf8;
+      box-shadow: 0 10px 30px rgba(56, 189, 248, 0.15);
+    }
+
+    .card-tag {
+      display: inline-block;
+      font-size: 0.75rem;
+      font-weight: 700;
+      color: #38bdf8;
+      letter-spacing: 1px;
+      margin-bottom: 0.8rem;
+      text-transform: uppercase;
+    }
+
+    .card h2 {
+      font-size: 1.3rem;
+      margin-bottom: 0.8rem;
+      color: #f1f5f9;
+    }
+
+    .card p {
+      color: #94a3b8;
+      font-size: 0.95rem;
+      line-height: 1.6;
+    }
+
+    /* 戻るボタン */
+    .back-btn-container {
+      text-align: center;
+      margin-top: 4rem;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 0.8rem 2rem;
+      background: #1e293b;
+      color: #f8fafc;
+      font-weight: 600;
+      text-decoration: none;
+      border-radius: 50px;
+      transition: all 0.3s ease;
+      border: 1px solid #334155;
+    }
+
+    .btn:hover {
+      background: #38bdf8;
+      color: #ffffff;
+      border-color: #38bdf8;
+    }
+
+    /* フッター */
+    footer {
+      text-align: center;
+      padding: 2rem;
+      color: #475569;
+      font-size: 0.9rem;
+    }
+
+    /* アニメーション */
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <a href="home.html" class="logo">TUM Group</a>
+    <a href="home.html" class="linknoyatu">← Home</a>
+  </header>
+
+  <main>
+    <div class="section-title">
+      <h1>WHAT WE DO - 活動内容</h1>
+      <p>TUMが手がけるプロジェクトと技術領域</p>
+    </div>
+
+    <div class="card-grid">
+      <!-- カード 1 -->
+      <div class="card">
+        <span class="card-tag">Development</span>
+        <h2>プログラミング</h2>
+        <p>HTML / CSS / JavaScript によるWeb実装や、Pythonを使った防災ソフト等の開発を行っています。</p>
+      </div>
+
+      <!-- カード 2 -->
+      <div class="card">
+        <span class="card-tag">Media</span>
+        <h2>動画撮影 & 編集</h2>
+        <p>映像の企画・撮影から編集までをトータルで制作。見やすいテロップ・演出にこだわっています。</p>
+      </div>
+
+      <!-- カード 3 -->
+      <div class="card">
+        <span class="card-tag">Interactive</span>
+        <h2>ゲーム制作</h2>
+        <p>独自のアイディアをカタチにするゲーム開発。プレイヤーが楽しめる体験をunity等でデザインしています。</p>
+      </div>
+
+      <!-- カード 4 -->
+      <div class="card">
+        <span class="card-tag">Operations</span>
+        <h2>サイト運営 & ニュース</h2>
+        <p>Webサイトの保守・運用や、最新トレンド・技術情報を発信するニュースライティングを行っています。</p>
+      </div>
+
+      <!-- カード 5 -->
+      <div class="card">
+        <span class="card-tag">Support</span>
+        <h2>ネット・ITサポート</h2>
+        <p>友人や利用者に向けたPC・インターネットのトラブルシューティングや設定サポートを無償で提供。</p>
+      </div>
+    </div>
+
+    <div class="back-btn-container">
+      <a href="home.html" class="btn">Back to Home</a>
+    </div>
+  </main>
+
+  <footer>
+    © TUM Group All Rights Reserved.
+  </footer>
+
+</body>
+</html>

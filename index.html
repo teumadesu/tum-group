@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TUM Group</title>
+  <style>
+    body {
+      margin: 0;
+      background-color: #0f172a;
+      color: #f8fafc;
+      font-family: sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
+
+
+    .card {
+  width: 90%;
+  max-width: 500px;
+  padding: 2.5rem;
+  background: #1e293b;
+  border-radius: 12px;
+  box-shadow: 0 13px 25px rgba(0, 0, 0, 0.5);
+  text-align: center;
+  border: 1px solid #334155;
+}
+    h1 {
+      margin-top: 0;
+      font-size: 2.5rem;
+      color: #38bdf8;
+    }
+
+    button {
+      background: linear-gradient(135deg, #38bdf8, #818cf8);
+      border: none;
+      color: white;
+      padding: 0.75rem 1.5rem;
+      font-size: 1rem;
+      font-weight: bold;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: transform 0.2s, opacity 0.2s;
+    }
+
+    button:hover {
+      transform: scale(1.05);
+      opacity: 0.9;
+    }
+  </style>
+</head>
+<body>
+
+
+  <div class="card">
+    <h1 id="title">TUM Group</h1>
+    <p>Create, Code, Connect.</p>
+    <p>つくる、書く、つながる。</p>
+    <button onclick="changeText()">Next page</button>
+  </div>
+
+
+  <script>
+    function changeText() {
+      const title = document.getElementById('title');
+      title.innerText = 'STEP INTO THE FUTURE';
+      title.style.color = '#f43f5e';
+
+
+      setTimeout(function() {
+        window.location.href = 'home.html'; 
+      }, 1500);
+    }
+  </script>
+
+</body>
+</html>
